@@ -19,7 +19,7 @@ class Vector2d:
         return Vector2d(self.x + other.x, self.y + other.y)
     
     def __eq__(self,other):
-        return Vector2d(self.x == other.x, self.y == other.y)
+        return ((self.x, self.y) == (other.x, other.y))
     
     def __sub__(self,other):
         return Vector2d((self.x-other.x), (self.y-other.y))
